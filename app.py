@@ -13,6 +13,10 @@ def homepage():
 def inscrito(nome_inscrito):
     return f'Olá {nome_inscrito}' 
 
+@app.route('/novarota')
+def novarota():
+    return 'nova rota'
+
 # colocar o site no ar
 if __name__ == "__main__":
     app.run(debug=True)
